@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet"  href="stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src="index.js"></script>
+</head>
+
+<body>
+    <!--navbar section-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-background fixed-top">
+        <a class="navbar-brand portfolio-logo" href="#"><img class="image-logo" src="logo.png" alt="logo"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active text-white" href="#">
+                    Home
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-link text-white ml-3" href="#aboutMe">About me</a>
+                <a class="nav-link text-white ml-3" href="#skills">Skills</a>
+                <a class="nav-link text-white ml-3" href="#projects">Projects</a>
+                <a class="nav-link text-white ml-3" href="#recentBlogs">Services</a>
+                <a class="nav-link text-white ml-3" href="#education">Education</a>
+                <a class="nav-link text-white ml-3" href="#contactDetails">Contact Details</a>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-section-bg-container d-flex flex-column justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 order-1 order-md-2">
+                    <img src="dickimage.jpg" alt="bannerimage" class="banner-section-image" />
+                </div>
+                <div class="col-12 col-md-7 order-2 order-md-1 d-flex flex-column justify-content-center">
+                    <h1 class="banner-section-heading mb-3">
+                        Hey, I am <span class="person-name">Tekumal Mounika</span>
+                    </h1>
+                    <p class="banner-section-description mb-3">
+                        I am a Frontend Developer & MERN Stack Developer.
+                    </p>
+                    <button class="custom-button" id="button" onclick="createModel()">Connect With Me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- createing contact details-->
+     <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Offical site to Connect</h5>
+          <button type="button" style="color: aliceblue;" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><a style="color: aliceblue;" href="https://www.linkedin.com/in/mounika-tekumal-20459822a"><i class="fab fa-linkedin">Linkedin</i></li>
+            <li><a style="color: aliceblue;" href="https://github.com/mounika-413"><i class="fab fa-github">Github</i></a></li>
+            <li><a style="color: aliceblue;" href="https://apna.co/tekumal-mounika-euasavp">Apna</a></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send Message</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <!-- aboutme section-->
+    <div id="aboutMe">
+        <div class="about-me-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 order-1 order-md-2 d-flex flex-column justify-content-center">
+                        <h1 class="about-me-section-sub-heading mb-3">Facts</h1>
+                        <h1 class="about-me-section-heading mb-3">About me</h1>
+                        <img src="profile.jpg" alt="profile" class="about-me-section-image d-md-none mb-3" />
+                        <p class="about-me-section-description">
+                            My name is Tekumal Mounika, and I am a recent graduate with a bachelor’s degree in Electronics and Communication, currently seeking my first role in Frontend Development.
+                            Although I am new to the professional world, I have developed a strong foundation in web development through my academic projects and self-directed learning.<br><br> 
+                            I am passionate about creating intuitive, responsive web interfaces and have honed my skills in HTML, CSS, JavaScript, and frameworks like React.js.
+                            I am eager to apply my knowledge in a real-world setting, where I can contribute to innovative projects and continue to grow as a developer.<br><br> 
+                            As a dedicated and self-motivated individual, I am known for my strong communication skills and my ability to work well in a team environment. 
+                            My love for reading has also played a significant role in enhancing my teaching and presentation skills, allowing me to effectively share ideas and collaborate with others.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 order-2 order-md-1 d-none d-md-block">
+                        <img src="profile.jpg" alt="profile" class="about-me-section-image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--skills-->
+        <div class="skills-section pt-5 pb-5" id="skills">
+            <div class="container">
+                <div class="row m-5">
+                    <div class="col-12">
+                        <h1 class="skills-section-sub-heading mb-3 ">
+                            Skills :
+                        </h1>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="shadow skills-card text-center mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-html-img.png" class="skills-card-image" />
+                            <h1 class="skills-card-title">HTML</h1>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="shadow skills-card text-center mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-css-img.png" class="skills-card-image" />
+                            <h1 class="skills-card-title">CSS</h1>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="shadow skills-card text-center mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-bootstrap-img.png" class="skills-card-image" />
+                            <h1 class="skills-card-title">Bootstrap</h1>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="shadow skills-card text-center mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-js-img.png" class="skills-card-image" />
+                            <h1 class="skills-card-title">JS</h1>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="shadow skills-card text-center mb-3">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSoW3g9hjXIasgon-kpzz-lD9z4SsalyPbZA&s" class="skills-card-image" />
+                            <h1 class="skills-card-title">React JS</h1>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="shadow skills-card text-center mb-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/2048px-Python_logo_01.svg.png" class="skills-card-image" />
+                            <h1 class="skills-card-title">Python</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--project section-->
+    <div id="projects" class="projects-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="projects-section-sub-heading mb-3">Portfolio</h1>
+                    <h1 class="projects-section-heading">Projects I have done</h1>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="projects-card mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-project-1-img.png" class="projects-card-image" />
+                        <div class="p-3">
+                            <h1 class="projects-card-sub-title mb-3">Web design</h1>
+                            <h1 class="projects-card-title">Royal Grand Hotel</h1>
+                            <p class="projects-card-description">
+                                Royal Grand Hotel is a Simple Static Website. We can use this layout for building the other websites...
+                            </p>
+                            <a class="projects-card-link" href="">
+                                Read More
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#cced00" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="projects-card mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-project-2-img.png" class="projects-card-image" />
+                        <div class="p-3">
+                            <h1 class="projects-card-sub-title mb-3">Web design</h1>
+                            <h1 class="projects-card-title">Happy Meals</h1>
+                            <p class="projects-card-description">
+                                Happy Meals is the best-in-class food ordering page today. With
+                                interactive UI/UX and simple call to actions...
+                            </p>
+                            <a class="projects-card-link" href="">
+                                Read More
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#cced00" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="projects-card mb-3">
+                        <img src="landingpage.png" class="projects-card-image" />
+                        <div class="p-3">
+                            <h1 class="projects-card-sub-title mb-3">Web design</h1>
+                            <h1 class="projects-card-title">Landing Page</h1>
+                            <p class="projects-card-description">
+                                A landing page for yoga would typically be designed to attract and inform visitors about a specific yoga program, event,general classes online class. 
+                                It often includes a call to action (like signing up for a class or downloading a yoga guide). 
+                                Here's how I created a simple landing page for yoga using HTML and CSS.<br>http://mounikatekumal.ccbp.tech
+                            </p>
+                            <a class="projects-card-link" href="">
+                                Read More
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#cced00" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="projects-card mb-3">
+                        <img src="https://circuitdiagrams.in/wp-content/uploads/2020/06/mobile-detector-1024x576.jpg" class="projects-card-image" />
+                        <div class="p-3">
+                            <h1 class="projects-card-sub-title mb-3">Circut Design</h1>
+                            <h1 class="projects-card-title">Mobile Phone Detector</h1>
+                            <p class="projects-card-description">
+                                Technology:Electronic components.<br>
+                                Description: A Mobile Phone Detector is a circuit that sense the presence of any activated cell phone nearby and 
+                                gives and indication of activated cell phone near around of it.<br>
+                                A mobile phone detector is a useful device for maintaining the sanctity and safety of restricted areas. 
+                            </p>
+                            <a class="projects-card-link" href="">
+                                Read More
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#cced00" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- serves section-->
+    <div id="recentBlogs" class="services-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="services-section-sub-heading mb-3">Services</h1>
+                    <h1 class="services-section-heading mb-3">What I do</h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="shadow services-card mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-web-design-img.png" class="services-card-image" />
+                        <h1 class="services-card-title mt-2">Static Websites</h1>
+                        <p class="services-card-description">
+                            A Static Website contains Web pages with fixed content.
+                            Each page is developed using HTML and CSS and displays the same information to every visitor.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="services-card mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-web-development-img.png" class="services-card-image" />
+                        <h1 class="services-card-title mt-2">Responsive Web design</h1>
+                        <p class="services-card-description">
+                            Responsive Web design is the approach that suggests that design and development should respond to the user’s behaviour and environment based on screen size, platform and orientation.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="shadow services-card mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-customize-img.png" class="services-card-image" />
+                        <h1 class="services-card-title mt-2">Customisable Layouts</h1>
+                        <p class="services-card-description">
+                            Customisable sites are templates with set layouts. You may be
+                            able to change photos and colors, but your site will look
+                            similar to many other sites due to the template. The same goes
+                            for...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- work done section-->
+    <div class="work-done-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-center">
+                    <svg width="60px" height="60px" viewBox="0 0 16 16" class="bi bi-hand-thumbs-up" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16v-1c.563 0 .901-.272 1.066-.56a.865.865 0 0 0 .121-.416c0-.12-.035-.165-.04-.17l-.354-.354.353-.354c.202-.201.407-.511.505-.804.104-.312.043-.441-.005-.488l-.353-.354.353-.354c.043-.042.105-.14.154-.315.048-.167.075-.37.075-.581 0-.211-.027-.414-.075-.581-.05-.174-.111-.273-.154-.315L12.793 9l.353-.354c.353-.352.373-.713.267-1.02-.122-.35-.396-.593-.571-.652-.653-.217-1.447-.224-2.11-.164a8.907 8.907 0 0 0-1.094.171l-.014.003-.003.001a.5.5 0 0 1-.595-.643 8.34 8.34 0 0 0 .145-4.726c-.03-.111-.128-.215-.288-.255l-.262-.065c-.306-.077-.642.156-.667.518-.075 1.082-.239 2.15-.482 2.85-.174.502-.603 1.268-1.238 1.977-.637.712-1.519 1.41-2.614 1.708-.394.108-.62.396-.62.65v4.002c0 .26.22.515.553.55 1.293.137 1.936.53 2.491.868l.04.025c.27.164.495.296.776.393.277.095.63.163 1.14.163h3.5v1H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+                    </svg>
+                    <hr class="hr-line" />
+                    <h1 class="work-done-card-title">10</h1>
+                    <h1 class="work-done-card-sub-title">Projects Completed</h1>
+                </div>
+                <div class="col-4 text-center">
+                    <svg width="60px" height="60px" viewBox="0 0 16 16" class="bi bi-file-text" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z" />
+                        <path fill-rule="evenodd" d="M4.5 10.5A.5.5 0 0 1 5 10h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <hr class="hr-line" />
+                    <h1 class="work-done-card-title">2,800</h1>
+                    <h1 class="work-done-card-sub-title">Lines of Code</h1>
+                </div>
+                <div class="col-4 text-center">
+                    <svg width="60px" height="60px" viewBox="0 0 16 16" class="bi bi-clock" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z" />
+                        <path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z" />
+                    </svg>
+                    <hr class="hr-line" />
+                    <h1 class="work-done-card-title">15</h1>
+                    <h1 class="work-done-card-sub-title">Hours Worked</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial-->
+    <div id="education" class="testimonials-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="testimonials-section-sub-heading mb-3">Education</h1>
+                    <h1 class="testimonials-section-heading mb-3">Education Details</h1>
+                </div>
+                <div class="col-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonials-card text-center">
+                                    <img src="https://www.eduska.com/assets/user_photo/136b932a483c826f4c699061a4b48d16.jpg" class="testimonials-card-image" alt="..." />
+                                    <p class="testimonials-card-description">
+                                        Bachelor of Technology<br> from<br>
+                                        <spann style="font-size:30px;">CMR Institute of Technology, Kandlakoya, Medchal.</spann>
+                                    </p>
+                                    <p class="testimonials-card-person-name">
+                                        ECE CPGP : 8.88
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonials-card text-center">
+                                    <img src="https://gpwnzb.dte.telangana.gov.in/filePreview?fileName=CMS/893.jpg" class="testimonials-card-image" alt="..." />
+                                    <p class="testimonials-card-description">
+                                        Diploma <br>from<br><spann style="font-size:30px;">Government Polytechnic For Womens, Nizamabad.</spann>
+                                    </p>
+                                    <p class="testimonials-card-person-name">
+                                        ECE CGPA : 9.72
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonials-card text-center">
+                                    <img src="https://shantiniketangroups.com/wp-content/uploads/2022/03/shantiniketan.jpg" class="testimonials-card-image" alt="..." />
+                                    <p class="testimonials-card-description">
+                                        Secondary School of Education <br>from <br><spann style="font-size:30px;">Shantiniketan High School, Nirmal.</spann>
+                                    </p>
+                                    <p class="testimonials-card-person-name">
+                                        10th CGPA : 9
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 text-right">
+                            <a href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--fottersection-->
+    <div id="contactDetails" class="footer-section pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 mb-3">
+                    <div class="d-flex flex-row">
+                        <img src="profile.jpg" class="footer-section-image" />
+                        <div class="ml-3">
+                            <h1 class="footer-section-sub-heading">Mounika</h1>
+                            <p class="footer-section-text">Frontend Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <h1 class="footer-section-sub-heading">Phone No.</h1>
+                    <div>
+                        <i class="fas fa-phone-alt icon"></i>
+                        <span class="footer-section-text ml-2">9014907066</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <h1 class="footer-section-sub-heading">E-mail</h1>
+                    <div>
+                        <i class="fas fa-envelope icon"></i>
+                        <span class="footer-section-text ml-2">tekumalmounika@gmail.com</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <h1 class="footer-section-sub-heading">Address</h1>
+                    <div>
+                        <i class="fas fa-map-marked-alt icon"></i>
+                        <span class="footer-section-text ml-2">Bangalepet, Nirmal.</span>
+                    </div>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

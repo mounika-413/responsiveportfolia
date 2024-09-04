@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar-background{
+    background-color: #224081;
+    font-family: Avigea;
+    font-weight: 600;
+}
+
+.portfolio-logo {
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 700;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4b6cc1;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.image-logo{
+    width: 100px;
+}
+
+.banner-section-bg-container {
+    background-color: #5683DC;
+    height: 100%;
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+
+.banner-section-heading {
+    color: white;
+    font-family: "Avigea";
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.banner-section-description {
+    color: #fef2eb;
+    font-family: "Avigea";
+    font-size: 24px;
+}
+
+.banner-section-image {
+    width: 300px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.person-name {
+    color: #0e2044;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    font-size: 50px;
+}
+
+.custom-button {
+    color: white;
+    background-color: #224081;
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    font-family: "Avigea";
+}
+/*modal section*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #29137b !important;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.modal-title{
+    color: white;
+    font-family: "Avigea";
+    font-size: 25px;
+    font-weight: bold;
+}
+.modal-body{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*about section css*/
+.about-me-section {
+    background-color: #224081;
+}
+
+.about-me-section-sub-heading {
+    color: #cced00;
+    font-family: "Avigea";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about-me-section-heading {
+    color: #ffffff;
+    font-family: "Avigea";
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.about-me-section-description {
+    color: #ebf0ff;
+    font-family: "Avigea";
+    font-size: 16px;
+}
+
+.about-me-section-image {
+    width: 80%;
+    margin-top: 50px;
+    border-radius: 50%;
+}
+
+/*skill section css*/
+.skills-section {
+    background-color: #4576d9;
+}
+
+.skills-section-sub-heading {
+    color: #cced00;
+    font-family: "Avigea";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skills-card {
+    background-color: #0e2044;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+}
+
+.skills-card-image {
+    width: 64px;
+    height: 64px;
+}
+
+.skills-card-title {
+    color: #ffffff;
+    font-family: "Avigea";
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*project section css*/
+
+.projects-section {
+    background-color: #0e2044;
+}
+
+.projects-section-sub-heading {
+    color: #cced00;
+    font-family: "Avigea";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.projects-section-heading {
+    color: #ffffff;
+    font-family: "Avigea";
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.projects-card {
+    background-color: #1c4087;
+    border-radius: 8px;
+}
+
+.projects-card-image {
+    width: 100%;
+}
+
+.projects-card-sub-title {
+    color: #ebf0ff;
+    font-family: "Avigea";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.projects-card-title {
+    color: white;
+    text-decoration: underline;
+    font-family: "Avigea";
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.projects-card-description {
+    color: #ebf0ff;
+    font-family: "Avigea";
+    font-size: 20px;
+}
+
+.projects-card-link {
+    color: #cced00;
+    font-family: "Avigea";
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*servise css*/
+
+
+.services-section {
+    background-color: #1c4087;
+}
+
+.services-section-sub-heading {
+    color: #cced00;
+    font-family: "Avigea";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.services-section-heading {
+    color: #ffffff;
+    font-family: "Avigea";
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.services-card {
+    background-color:  #0e2044;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.services-card-image {
+    height: 48px;
+    width: 48px;
+}
+
+.services-card-title {
+    color: #ffffff;
+    font-family: "Avigea";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.services-card-description {
+    color: #ebf0ff;
+    font-family: "Avigea";
+    font-size: 20px;
+}
+
+/*workdone css*/
+.work-done-section {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-work-done-bg.png");
+    background-size: cover;
+}
+
+.hr-line {
+    background-color: white;
+    width: 60px;
+}
+
+.work-done-card-title {
+    color: white;
+    font-family: "Avigea";
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.work-done-card-sub-title {
+    color: white;
+    font-family: "Avigea";
+    font-size: 16px;
+}
+
+/*Education*/
+
+.testimonials-section {
+    background-color: #4b6cc1;
+    padding: 40px;
+}
+
+.testimonials-section-sub-heading {
+    color: #cced00;
+    font-family: "Avigea";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.testimonials-section-heading {
+    color: #ffffff;
+    font-family: "Avigea";
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.testimonials-card {
+    background-color:#01236d ;
+    padding: 20px;
+}
+
+.testimonials-card-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.testimonials-card-description {
+    color: #ebf0ff;
+    font-family: "Avigea";
+    font-size: 18px;
+}
+
+.testimonials-card-person-name {
+    color: #ffffff;
+    font-family: "Avigea";
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*fotter section*/
+
+.footer-section {
+    background-color:#224081;
+}
+
+.footer-section-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+}
+
+.footer-section-copyright-container {
+    text-align: center;
+    color: #ebf0ff;
+    background-color: #001c32;
+    padding: 10px;
+}
+
+.footer-section-sub-heading {
+    color: #cced00;
+    font-family: "Avigea";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-section-text {
+    color: #ebf0ff;
+    font-family: "Avigea";
+    font-size: 14px;
+}
+
+.icon {
+    color: #ebf0ff;
+    font-size: 18px;
+}
